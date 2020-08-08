@@ -1,0 +1,48 @@
+﻿  Game.cpp
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(6): error C2011: 'Game': 'class' type redefinition
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(3): error C2143: syntax error: missing ';' before '*'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(7): error C2027: use of undefined type 'Game'
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(8): warning C4508: '{ctor}': function should return a value; 'void' return type assumed
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(10): error C2027: use of undefined type 'Game'
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(11): warning C4508: '{dtor}': function should return a value; 'void' return type assumed
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(13): error C2027: use of undefined type 'Game'
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(24): error C2065: 'window': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(25): error C2065: 'renderer': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(25): error C2065: 'window': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(26): error C2065: 'renderer': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(28): error C2065: 'renderer': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(31): error C2065: 'isRunning': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(34): error C2660: 'TextureManager::LoadTexture': function does not take 1 arguments
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\texturemanager.h(8): note: see declaration of 'TextureManager::LoadTexture'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(37): error C2027: use of undefined type 'Game'
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(46): error C2065: 'isRunning': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(53): error C2027: use of undefined type 'Game'
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(55): error C2065: 'cnt': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(59): error C2065: 'cnt': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(60): error C2065: 'cnt': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(62): error C2065: 'cnt': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(65): error C2027: use of undefined type 'Game'
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(67): error C2065: 'renderer': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(68): error C2065: 'renderer': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(69): error C2065: 'renderer': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(72): error C2027: use of undefined type 'Game'
+  c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.h(5): note: see declaration of 'Game'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(74): error C2065: 'window': undeclared identifier
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\game.cpp(75): error C2065: 'renderer': undeclared identifier
+  TextureManager.cpp
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\texturemanager.cpp(3): error C2143: syntax error: missing ';' before '*'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\texturemanager.cpp(4): error C2761: 'SDL_Texture *TextureManager::LoadTexture(const char *,SDL_Renderer *)': redeclaration of member is not allowed
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\texturemanager.cpp(4): error C2059: syntax error: '{'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\texturemanager.cpp(4): error C2143: syntax error: missing ';' before '{'
+c:\users\ailan\source\repos\sdlproject\sdlbase\sdlbase\texturemanager.cpp(4): error C2447: '{': missing function header (old-style formal list?)
+  Generating Code...
