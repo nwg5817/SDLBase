@@ -1,8 +1,13 @@
 #include "Game.h"
 #include "TextureManager.h"
-SDL_Texture* playerTexture;
-SDL_Rect srcR, destR;
+#include "GameObject.h"
+#include "Map.h"
 
+GameObject* player;
+GameObject* enemy;
+Map* map;
+
+SDL_Renderer* Game::renderer = nullptr;
 
 Game::Game()
 {}
@@ -25,13 +30,15 @@ void Game::init(const char* title, int width, int height, bool fullscreen)
 		renderer = SDL_CreateRenderer(window, -1, 0);
 		if (renderer)
 		{
-			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+			SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 		}
 
 		isRunning = true;
 	}
 
-	playerTexture = TextureManager::LoadTexture("assets/squid.png");
+	player = new GameObject("assets/player.png", 0, 0);
+	enemy = new GameObject("assets/enemy.png", 15, 15);
+	map = new Map();
 }
 
 void Game::handleEvents()
@@ -52,20 +59,16 @@ void Game::handleEvents()
 
 void Game::update()
 {
-	cnt++;
-	destR.h = 64;
-	destR.w = 64;
-
-	destR.x = cnt;
-	destR.y = cnt;
-
-	std::cout << cnt << std::endl;
+	player->Update();
+	enemy->Update();
 }
 
 void Game::render()
 {
 	SDL_RenderClear(renderer);
-	SDL_RenderCopy(renderer, playerTexture, NULL, &destR);
+	map->DrawMap();
+	player->Render();
+	enemy->Render();
 	SDL_RenderPresent(renderer);
 }
 

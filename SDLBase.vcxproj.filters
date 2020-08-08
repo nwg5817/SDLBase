@@ -24,6 +24,12 @@
     <ClCompile Include="TextureManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -32,12 +38,24 @@
     <ClInclude Include="TextureManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\squid.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="assets\test.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\player.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\enemy.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

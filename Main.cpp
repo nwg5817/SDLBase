@@ -1,8 +1,7 @@
 // SDLBase.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
-#include "SDL2/SDL.h"
+//#include <iostream>
 #include "Game.h"
 
 Game *game = nullptr;
@@ -17,7 +16,7 @@ int main(int argc, char *argv[])
 	int frameTime;
 
 	game = new Game();
-	game->init("GameWindow", 800, 600, false);
+	game->init("GameWindow", 800, 640, false);
 
 	while (game->running())
 	{
