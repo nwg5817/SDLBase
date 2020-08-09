@@ -15,47 +15,71 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="src\GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="src\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
+    <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
+    <ClCompile Include="src\Map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
+    <ClCompile Include="src\TextureManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="src\ECS\ECS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TextureManager.h">
+    <ClInclude Include="src\ECS\Components.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
+    <ClInclude Include="src\ECS\SpriteComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Map.h">
+    <ClInclude Include="src\ECS\PositionComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="assets\squid.png">
+    <Image Include="src\assets\dirt.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="assets\test.bmp">
+    <Image Include="src\assets\enemy.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="assets\player.png">
+    <Image Include="src\assets\grass.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="assets\enemy.png">
+    <Image Include="src\assets\man.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\assets\player.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\assets\squid.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\assets\test.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\assets\water.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

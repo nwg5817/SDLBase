@@ -76,6 +76,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <LibraryPath>C:\src\vcpkg\installed\x64-windows\lib\manual-link;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -154,23 +155,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Map.cpp" />
+    <ClCompile Include="src\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Map.h" />
-    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="src\ECS\PositionComponent.h" />
+    <ClInclude Include="src\ECS\SpriteComponent.h" />
+    <ClInclude Include="src\ECS\Components.h" />
+    <ClInclude Include="src\ECS\ECS.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\Map.h" />
+    <ClInclude Include="src\TextureManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="assets\enemy.png" />
-    <Image Include="assets\player.png" />
-    <Image Include="assets\squid.png" />
-    <Image Include="assets\test.bmp" />
+    <Image Include="src\assets\dirt.png" />
+    <Image Include="src\assets\enemy.png" />
+    <Image Include="src\assets\grass.png" />
+    <Image Include="src\assets\man.gif" />
+    <Image Include="src\assets\player.png" />
+    <Image Include="src\assets\squid.png" />
+    <Image Include="src\assets\test.bmp" />
+    <Image Include="src\assets\water.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
